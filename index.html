@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blacksmith Agency Partnership</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blacksmith Agency</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: "Montserrat", sans-serif;
+      }
+      .main-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .main-container img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+      .content_part {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-items: center;
+      }
+      .content_part img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+      }
+      .child-container {
+        width: 335px;
+      }
+      .child-container h1 {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+      }
+      .child-container p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+      .child-container div {
+        display: flex;
+        gap: 10px;
+      }
+      @media (max-width: 600px) {
+        .main-container img {
+          height: auto;
         }
-        h1 {
-            color: #333;
+        .content_part {
+          position: inherit;
+          width: 100%;
         }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #0073e6;
-        }
+      }
     </style>
-</head>
-<body>
-    <h1>Proud Partner of Blacksmith Agency</h1>
-    <p>
-        We are thrilled to collaborate with Blacksmith Agency to deliver exceptional web development and digital solutions. 
-        This partnership reflects our shared commitment to quality and innovation.
-    </p>
-    <div class="contact">
-        <p>Contact Us: yourname@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your Profile</a></p>
-    </div>
-</body>
+  </head>
+  <body>
+    <section class="main-container">
+      <img src="./assets/Blacksmith.svg" alt="Blacksmith Public Acknowledgment" />
+      <div class="content_part">
+        <div class="child-container">
+          <h1>Proud Partner of Blacksmith Agency</h1>
+          <p>
+            We are thrilled to collaborate with Blacksmith Agency to deliver
+            exceptional web development and digital solutions. This partnership
+            reflects our shared commitment to quality and innovation.
+          </p>
+          <div>
+            <a href="mailto:hafiz.abdul.munnan@gmail.com"
+              ><img src="./assets/Email.svg" alt="Email By Hafiz Abdul Munnan"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/hafiz-abdul-munnan/"
+              target="_blank"
+              ><img src="./assets/Linkedin.svg" alt="Email By Hafiz Abdul Munnan"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
